@@ -60,10 +60,41 @@ body{
 }    
 
 .hero__text{
-    font-weight: 800;
-    font-size: 30px;
+    font-weight:900;
+    font-size: 35px;
     margin: 20px 0;
     color: #1d3557;
+}
+
+.food__card__description{
+    padding: 15px;
+}
+
+.food__card{
+    background-color: #F9F9F9;
+    border-radius: 8px;
+}
+
+.food__card__image__container{
+    width: 100%;
+}
+
+.food__image{
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+}
+
+.explore__menu__text{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+    color: #1d3557;
+}
+
+.food__title{
+    font-weight: 900;
 }
 
 @media (min-width: 768px){
@@ -78,6 +109,41 @@ body{
         flex-direction: row-reverse;
         align-items: center;
     }
+
+    .explore__menu__lists{
+        display: flex;
+        gap: 15px;
+        margin-top:45px ;
+        padding: 0 30px;
+    }
+
+    #pizza__card{
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    .explore__menu__container{
+        position: relative;
+        margin-top: 100px;
+        padding: 0 0 100px 0;
+    }
+
+    .explore__menu__gradient__bg{
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+        z-index: -3;
+        transform: skewY(-5deg);
+    }
+
 }
 
 @media (min-width: 1024px){
@@ -101,4 +167,31 @@ body{
     .hero__text{
         font-size: 50px;
     }
+
+    .explore__menu__lists{
+        gap: 25px;  
+    }
+
+    .explore__menu__text{
+        font-size: 50px;
+    }
+
+    /* .explore__menu__container{
+        position: relative;
+    }
+
+    .explore__menu__gradient__bg{
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+        
+    } */
 }
