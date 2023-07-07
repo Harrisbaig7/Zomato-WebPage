@@ -47,16 +47,10 @@ body{
     max-width: 100%;
     padding: 20px;
     margin: 0 auto;
-    
 }
 
 .hero__image__container{
     width: 100%;
-    /* background-image: url('./assests/SVG/herobgpattren.svg'),
-    url('./assests/SVG/heroShape.svg');
-    background-position: right;
-    background-repeat: no-repeat;
-    height: 200px; */
 }
 
 .hero__image{
@@ -77,6 +71,7 @@ body{
         justify-content: space-between;
         padding: 10px 30px;
     }
+    
     .hero__container{
         margin-top: 20px;
         display: flex;
