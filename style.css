@@ -1,3 +1,5 @@
+/* MAIN CSS */
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +9,8 @@ body{
     font-family: 'Merriweather', serif;
     background-color: #ebf2ff;
 }
+
+/* NAVBAR SECTION */
 
 .navbar{
     display: flex;
@@ -22,6 +26,42 @@ body{
 .navbar__logo{
     width: 100%;
 }
+
+.hide__mobile {
+    display: none;
+}
+
+.mobile__only {
+    display: block;
+}
+
+.hamburger__menu div{
+    background-color: #fff;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+}
+
+.navbar__nav__dropdown__items {
+    display: none;
+    padding: 20PX;
+    background-color: #fff;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+
+.navbar__nav__dropdown__items ul {
+    list-style: none;
+}
+
+.navbar__nav__dropdown__items li {
+    margin: 1.2rem 0;
+}
+
+.dropdown__button {
+    margin: 0 1rem;
+}
+
+/* BUTTON CSS */
 
 .button__primary{
     background-image: linear-gradient(
@@ -45,6 +85,8 @@ body{
     border: 2px solid #ff6767;
     cursor: pointer;
 }
+
+/* HERO SECTION */
 
 .container{
     max-width: 100%;
@@ -93,6 +135,42 @@ body{
     width: 100%;
 }
 
+/* VIDEO SECTION */
+
+.video__container {
+    margin: 50px 0;
+}
+
+.video__iframe {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.video__content {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.video__items {
+    position: relative;
+}
+
+.video__gradient__bg {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 300px;
+    margin: 0 auto;
+    height: 100%;
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    z-index: -1;
+}
+
+/* EXPLORE MENU SECTION */
+
 .explore__menu__text{
     margin-top: 30px;
     margin-bottom: 20px;
@@ -112,11 +190,159 @@ body{
     border-radius: 5px;
 }
 
+/* Restaurants Lists Section */
+
+.restaurants__lists__container{
+    margin: 50px 0;
+}
+
+.restaurants__lists__title {
+    color: #1d3557;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.restaurants__lists__images__row1 {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.restaurants__lists__images__row2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    width: 100%;
+
+}
+
+.restaurants__image1, .restaurants__image3 {
+    margin: 5px;
+    width: 150px;
+    height: 80px;
+    border-radius: 4px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+    
+.restaurants__image2, .restaurants__image4 {
+    margin: 5px;
+    width: 200px;
+    height: 100px;
+    border-radius: 4px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%); 
+}
+
+/* Stay Updated Section */
+
+.stay__updated__title {
+    color: #1d3557;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.stay__updated__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.get__updates {
+    padding: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.email__input {
+    border: 1px solid #ee89a0;
+    border-radius: 4px;
+    background-color: #fcedf0;
+    padding: 10px;
+    height: 10px;
+}
+
+input::placeholder {
+    color: #D3D3D3;
+    font-weight: bold;
+}
+
+/* Image Quotes Section */
+
+.quote__image__container {
+    background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+    center center / cover no-repeat;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.quote__image__overlay {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    opacity: 49%;
+    background-color: #1d3557;
+    border-radius: 10px;
+}
+
+.quote__image__container .quote__image__description {
+    position: absolute;
+    font-weight: 900;
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Footer */
+
+.zomato__footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem 1rem 0 0;
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+}
+
+.footer__logo__brand img{
+    width: 100%;
+    filter: brightness(0) 
+    invert(1);
+    
+}
+
+.footer__list__content ul {
+    list-style: none;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+}
+
+.footer__list__content li {
+    margin: 5px;
+}
+
 @media (min-width: 768px){
+    /* Navbar Section */
+
+    .hide__mobile {
+        display: block;
+    }
+    
+    .mobile__only {
+        display: none;
+    }
+
     .navbar{
         justify-content: space-between;
         padding: 10px 30px;
     }
+
+    /* Hero Section */
     
     .hero__container{
         margin-top: 20px;
@@ -131,6 +357,23 @@ body{
         box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
         z-index: 3;
     }
+
+    /* Video Section */
+
+    .video__container {
+        display: flex;
+    }
+
+    .video__gradient__bg {
+        height: 150px;
+        left: 20px;
+    }
+
+    .video__items {
+        margin-right: 70px;
+    }
+
+    /* Explore Section */
 
     .explore__menu__lists{
         display: flex;
@@ -169,12 +412,72 @@ body{
     .view__more__text {
         background-image: none;
     }
+
+    /* Restaurants Lists Section */
+
+    .restaurants__lists__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .restaurants__lists__title {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    /* Stay Updated Section */
+
+    .stay__updated__container{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stay__updated__content {
+        width: 450px;
+    }
+
+    .stay__updated__title {
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .stay__updated__items input {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .stay__updated__button > button {
+        padding: 8px;
+        width: 120px;
+        text-align: center;
+    }
+
+    /* Quote Image Section */
+
+    .quote__image__container .quote__image__description {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .quote__image__container , .quote__image__overlay {
+        height: 300px;
+    }
+
+    /* Footer Section */
+
+    .zomato__footer {
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
 }
 
 @media (min-width: 1024px){
-    .container{
-        max-width: 70%;
-    }
+    /* Navbar Section */
 
     .navbar__brand{
         width: 150px;
@@ -185,6 +488,12 @@ body{
         font-size: 20px;
     }
 
+    /* Hero Section */
+
+    .container{
+        max-width: 70%;
+    }
+
     .hero__description{
         width: 100%;
     }
@@ -192,6 +501,21 @@ body{
     .hero__text{
         font-size: 50px;
     }
+
+    /* Video Section */
+
+    .video__container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video__content {
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    /* Explore Section */
 
     .explore__menu__lists{
         gap: 25px;  
@@ -203,5 +527,47 @@ body{
 
     .view__more__text {
         transition: 0.2s;
+    }
+
+     /* Restaurants Lists Section */
+
+    .restaurants__lists__title {
+        font-size: 3rem;
+    }
+
+    .restaurants__lists__images__container {
+        margin: 30px 0;
+    }
+
+    .restaurants__image1, .restaurants__image3 {
+        margin: 5px;
+        width: 250px;
+        height: 180px;
+        border-radius: 4px;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+    }
+        
+    .restaurants__image2, .restaurants__image4 {
+        margin: 5px;
+        width: 300px;
+        height: 250px;
+        border-radius: 4px;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%); 
+    }
+
+    /* Stay Updated Section */
+
+    .stay__updated__content {
+        margin: 30px 0;
+    }
+
+    .stay__updated__title {
+        font-size: 3rem
+    }
+
+    .stay__updated__button .get__updates {
+        padding: 12px;
+        text-align: center;
+        font-size: 1rem;
     }
 }
