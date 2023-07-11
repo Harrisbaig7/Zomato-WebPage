@@ -33,8 +33,11 @@ body{
     color: #fff;
     border: none;
     padding: 12px;
-    border-radius: 6px;
+    border-radius: 5px;
     font-weight: 600;
+    padding: 0.5rem 1rem;
+    background-size: 200% auto;
+    transition: all 1s linear;
 }
 
 .button__primary:hover{
@@ -49,15 +52,21 @@ body{
     margin: 0 auto;
 }
 
-.hero__image__container{
+.hero__image__container {
+    position: relative;
     width: 100%;
 }
-
-.hero__image{
+.hero__image {
+    position: absolute;
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
-}    
+    z-index: 2;
+}
+
+.hero__bg__pattern{
+    position: absolute;
+}
 
 .hero__text{
     font-weight:900;
@@ -97,6 +106,12 @@ body{
     font-weight: 900;
 }
 
+.food__card__lists__view__more .view__more__text {
+    text-align: center;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
 @media (min-width: 768px){
     .navbar{
         justify-content: space-between;
@@ -108,6 +123,13 @@ body{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+    }
+
+    .hero__image {
+        margin-top: 30px;
+        border-radius: 8px;
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+        z-index: 3;
     }
 
     .explore__menu__lists{
@@ -132,7 +154,7 @@ body{
         position: absolute;
         top:0;
         left: 0;
-        height: 100%;
+        height: 87%;
         width: 100%;
         background-image: linear-gradient(
             to right,
@@ -144,6 +166,9 @@ body{
         transform: skewY(-5deg);
     }
 
+    .view__more__text {
+        background-image: none;
+    }
 }
 
 @media (min-width: 1024px){
@@ -176,22 +201,7 @@ body{
         font-size: 50px;
     }
 
-    /* .explore__menu__container{
-        position: relative;
+    .view__more__text {
+        transition: 0.2s;
     }
-
-    .explore__menu__gradient__bg{
-        position: absolute;
-        top:0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-image: linear-gradient(
-            to right,
-            #ff512f 0%,
-            #dd2476 51%,
-            #ff512f 100%
-        );
-        
-    } */
 }
